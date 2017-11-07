@@ -1,0 +1,6 @@
+pandas==0.19.2
+PyMySQL==0.7.11
+Scrapy==1.4.0
+selenium==3.3.1
+SQLAlchemy==1.1.14
+titlecase==0.12.0

@@ -1,0 +1,32 @@
+CREATE TABLE `Book` (
+  `scraped_id` int(11) NOT NULL AUTO_INCREMENT,
+  `Title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Author` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Source` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Timestamp` timestamp DEFAULT CURRENT_TIMESTAMP,
+  `Date_published` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Category` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Award` varchar(300) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Year` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Rank` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Provider_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`scraped_id`),
+  UNIQUE KEY `scraped_id_UNIQUE` (`scraped_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=287874 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `Providers` (
+  `Provider_id` int(20) DEFAULT NULL,
+  `Provider_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=287874 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (1,'Barnes and Noble');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (2,'Bookbrowse');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (3,'Bookrags');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (4,'New York Times');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (5,'Shmoop');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (6,'Sparknotes');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (7,'Litcharts');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (8,'Goodreads');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (9,'Reading group');
+INSERT INTO `Providers` (`Provider_id`,`Provider_name`) VALUES (10,'Gradesaver');
+
