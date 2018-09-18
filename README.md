@@ -34,7 +34,7 @@ $ brew install chromedriver
 
 ### Connecting the Database
 
-* Put your MySQL database credential/connection info in the **supersummary_sql_credentials.json** file
+* Put your MySQL database credential/connection info in the **sql_credentials.json** file
  * Host ex *localhost:3036*
  * User ex *root*
  * Password ex *SQLpassword*
