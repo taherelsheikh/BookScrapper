@@ -13,7 +13,7 @@ An application and database solution that scrapes book data from ten websites. T
 
 ### Installing packages
 
-* After downloading Python go to the project’s directory from the terminal (eg. $ ~/super-summary)
+* After downloading Python go to the project’s directory from the terminal (eg. $ ~/bookscrapper)
 * Run the following code in the terminal:
 
 ```
