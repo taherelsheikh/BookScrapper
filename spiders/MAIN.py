@@ -127,7 +127,7 @@ def find(name, path):
         if name in files:
             return os.path.join(root, name)
 
-fpath = find('supersummary_sql_credentials.json', '/Users')
+fpath = find('sql_credentials.json', '/Users')
 jstr = open(fpath)
 data = json.load(jstr)
 
